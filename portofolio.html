@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio dengan Latar Belakang Anime</title>
+    <style>
+        /* Reset Margin dan Padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hilangkan scroll untuk animasi yang halus */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Latar Belakang Gambar Bergerak */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://bloximages.newyork1.vip.townnews.com/2news.com/content/tncms/assets/v3/editorial/9/71/971778ad-b890-5d24-81d1-0e613c366720/6710db70e58a9.image.jpg?resize=1396%2C735'); /* Ganti dengan URL gambar anime */
+    background-size: cover;
+    background-repeat: repeat-x; /* Gambar akan berulang secara horizontal */
+    animation: moveBackground 30s linear infinite;
+    z-index: -1; /* Letakkan latar belakang di bawah konten */
+}
+
+/* Animasi Latar Belakang Bergerak */
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2000px 0; /* Sesuaikan nilai ini dengan lebar gambar */
+    }
+}
+
+/* Konten Portofolio */
+.portfolio-content {
+    position: relative;
+    z-index: 1; /* Pastikan konten ada di atas latar belakang */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk teks */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="background"></div>
+    
+    <!-- Konten Portofolio -->
+    <div class="portfolio-content">
+        <header>
+            <h1>ANDI MUHAMMAD ALIF</h1>
+            <p>Student & Web Developer</p>
+        </header>
+
+        <section class="about">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah Seorang mahasiswa yang penuh semangat dan seorang web developer yang berfokus pada pengembangan website modern.
+                 Saya sedang menempuh pendidikan tinggi di bidang Sosial, Saya memperoleh pemahaman mendalam tentang teknologi informasi, desain web, dan keterampilan pemrograman melalui media media yang ada atau belajar secara otodidak
+                   Saya selalu tertarik dengan bagaimana teknologi dapat mengubah dunia dan saya yakin bahwa website yang dirancang dengan baik dapat memberikan dampak besar dalam kehidupan sehari-hari.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Proyek Saya</h2>
+            <ul>
+                <li>Website Company Profile</li>
+                <li>Landing Page Website</li>
+                <li>Portofolio Desain Grafis</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Kontak Saya</h2>
+            <p>Email: andimuhalif425@gmail.com</p>
+            <p>Telepon: 082254591783</p>
+        </section>
+    </div>
+</body>
+</html>
+
